@@ -1,9 +1,9 @@
 import pathlib
-from setuptools import setup, find_packages
+from setuptools import setup
 
 HERE = pathlib.Path(__file__).parent
 
-VERSION = '1.0.1'
+VERSION = '1.0.7'
 PACKAGE_NAME = 'log_points'
 AUTHOR = 'PuddlesDay'
 AUTHOR_EMAIL = 'rosiegbartlett@gmail.com'
@@ -15,9 +15,6 @@ LONG_DESCRIPTION = (HERE / "README.md").read_text()
 LONG_DESC_TYPE = "text/markdown"
 
 INSTALL_REQUIRES = [
-    'os',
-    'inspect',
-    'signal'
 ]
 
 setup(name=PACKAGE_NAME,
@@ -29,6 +26,5 @@ setup(name=PACKAGE_NAME,
       license=LICENSE,
       author_email=AUTHOR_EMAIL,
       url=URL,
-      install_requires=INSTALL_REQUIRES,
-      packages=find_packages()
+      install_requires=INSTALL_REQUIRES
       )
